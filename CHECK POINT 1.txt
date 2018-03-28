@@ -1,11 +1,11 @@
 // Lab02_1
-// ¨Ï¥Îfor°j°éªº¶]°¨¿Oµ{¦¡
+// ä½¿ç”¨forè¿´åœˆçš„è·‘é¦¬ç‡ˆç¨‹å¼
 //
-// ¨C­Ó LED ¥¿·¥±µ¨ì Pin 0 - 7, ­t·¥±µ¦a
+// æ¯å€‹ LED æ­£æ¥µæ¥åˆ° Pin 0 - 7, è² æ¥µæ¥åœ°
 const byte startPin = 8;
 const byte endPin = 15;
 void setup() {
-// ±N¨C­Ó Pin ³]©w¦¨¿é¥X
+// å°‡æ¯å€‹ Pin è¨­å®šæˆè¼¸å‡º
 for (byte i = startPin; i<= endPin; i++) {
 pinMode(i, OUTPUT);
 }
@@ -14,15 +14,15 @@ void loop()
 {
 byte i;
 byte lightPin = startPin;
-// ©Ò¦³ LED OFF
+// æ‰€æœ‰ LED OFF
 delay (500);  
 for (i=startPin; i<= endPin; i++) {
 digitalWrite(i,HIGH);
 }
-// ³]©w­nÂI«Gªº LED ¦ì¸m
-// ¦pªGÂI«Gªº¸}¦ì½s¸¹¤p©óµ²§ô¸}¦ì,
-//«h¸}¦ì½s¸¹+1
-// §_«h±qÀY¶}©l
+// è¨­å®šè¦é»äº®çš„ LED ä½ç½®
+// å¦‚æœé»äº®çš„è…³ä½ç·¨è™Ÿå°æ–¼çµæŸè…³ä½,
+//å‰‡è…³ä½ç·¨è™Ÿ+1
+// å¦å‰‡å¾é ­é–‹å§‹
 for(lightPin=startPin-1;lightPin<=endPin;)
 {
 if (lightPin <= endPin) 
